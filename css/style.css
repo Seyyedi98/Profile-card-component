@@ -6,6 +6,8 @@ body {
   padding: 1rem;
   background-image: url("/images/bg-pattern-top.svg");
   background-color: hsl(185, 75%, 39%);
+  background-repeat: no-repeat;
+  background-size: contain;
   background-blend-mode: multiply;
 }
 
@@ -21,7 +23,7 @@ p {
 }
 
 .card-img {
-  background-image: url("/images/bg-pattern-card.svg");
+  background-image: url("../images/bg-pattern-card.svg");
   height: 170px;
   width: 100%;
 }
