@@ -12,29 +12,6 @@ body {
   overflow: hidden;
 }
 
-body::after,
-body::before {
-  content: "";
-  display: block;
-  width: 1000px;
-  height: 1000px;
-  position: absolute;
-  background-size: 100% 100%;
-  z-index: -1;
-}
-
-body::after {
-  background-image: url("../images/bg-pattern-top.svg");
-  top: -10%;
-  left: -30%;
-}
-
-body::before {
-  background-image: url("../images/bg-pattern-bottom.svg");
-  bottom: -30%;
-  right: -12%;
-}
-
 p {
   color: hsl(227, 10%, 46%);
 }
@@ -141,5 +118,28 @@ p {
 
   .card-img {
     height: 200px;
+  }
+
+  body::after,
+  body::before {
+    content: "";
+    display: block;
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    background-size: 100% 100%;
+    z-index: -1;
+  }
+
+  body::after {
+    background-image: url("../images/bg-pattern-top.svg");
+    top: -10%;
+    left: -30%;
+  }
+
+  body::before {
+    background-image: url("../images/bg-pattern-bottom.svg");
+    bottom: -30%;
+    right: -12%;
   }
 }
