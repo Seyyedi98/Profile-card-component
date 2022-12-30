@@ -4,11 +4,35 @@ body {
   display: grid;
   place-items: center;
   padding: 1rem;
-  background-image: url("/images/bg-pattern-top.svg");
+  /* background-image: url("/images/bg-pattern-top.svg"); */
   background-color: hsl(185, 75%, 39%);
   background-repeat: no-repeat;
   background-size: contain;
   background-blend-mode: multiply;
+  overflow: hidden;
+}
+
+body::after,
+body::before {
+  content: "";
+  display: block;
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  background-size: 100% 100%;
+  z-index: -1;
+}
+
+body::after {
+  background-image: url("../images/bg-pattern-top.svg");
+  top: -10%;
+  left: -30%;
+}
+
+body::before {
+  background-image: url("../images/bg-pattern-bottom.svg");
+  bottom: -30%;
+  right: -12%;
 }
 
 p {
